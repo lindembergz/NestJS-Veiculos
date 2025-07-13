@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: user-project-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./ssl:/usr/src/app/ssl
+    environment:
+      - PORT=3000
+      - JWT_SECRET=a-very-strong-and-long-secret-key-that-is-at-least-32-characters-long
+      - JWT_ISSUER=my-app
+      - JWT_AUDIENCE=my-app
+      - JWT_ACCESS_TOKEN_EXPIRATION_MINUTES=15
+      # Database connection
+      - DB_HOST=mysql-vehiclesales
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_PASSWORD=RootPassword123
+      - DB_DATABASE=vehiclesalesdb
+    networks:
+      - app-net
+
+# Define a rede personalizada
+networks:
+  app-net:
+    driver: bridge

@@ -1,0 +1,61 @@
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+
+:host ::ng-deep .p-datatable-emptymessage td,
+:host ::ng-deep .p-datatable-loadingbody td {
+    text-align: center !important;
+    justify-content: center;
+}
+
+
+:host ::ng-deep .p-toolbar {
+  margin-bottom: 1rem; 
+}
+
+
+:host ::ng-deep .p-datatable .p-paginator-bottom {
+  border-top: 1px solid var(--surface-d);
+}
+
+:host ::ng-deep .p-datatable .p-datatable-header {
+  border-bottom: 1px solid var(--surface-d);
+}
+
+
+.p-input-icon-left > .p-inputtext {
+  padding-left: 2.5rem;
+}
+
+:host ::ng-deep .p-toolbar-group-right .p-button {
+    margin-left: 0.5rem;
+}
+
+
+:host ::ng-deep .p-datatable .p-datatable-thead > tr > th {
+    text-align: left;
+}
+
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td .p-button {
+    margin-right: 0.25rem; 
+}
+
+:host ::ng-deep .p-datatable .p-datatable-tbody > tr > td .p-button:last-child {
+    margin-right: 0;
+}
+
+
+:host ::ng-deep .p-tag {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+}

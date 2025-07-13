@@ -1,0 +1,33 @@
+
+.p-card-content {
+  padding-bottom: 0; 
+}
+
+.p-dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem; 
+  border-top: 1px solid var(--surface-border); 
+}
+
+.p-dialog-footer .p-button {
+  margin-left: 0.5rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+.field .p-inputswitch {
+  margin-top: 0.5rem; 
+}
+
+
+.p-error {
+  display: block;
+  margin-top: 0.25rem; 
+  font-size: 0.875em; 
+}
